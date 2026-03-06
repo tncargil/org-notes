@@ -4,3 +4,8 @@ git add . //add changes
 git commit -m "put commit message"
 git push origin master //sometimes it's main
 ** Create New Repo
+git init
+git add .
+git commit -m "message"
+gh create repo
+gh repo create name-of-repo --public --push --source=.
