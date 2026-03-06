@@ -1,0 +1,8 @@
+* Emacs
+** Org Commands
+space n: view org notes
+rename file: find file -> enter -> R
+** Common commands
+YOUT: open/close terminal or ot
+F*F: find file or ff
+F*R: find recent file

@@ -1,0 +1,6 @@
+* Git Commands
+** Push Changes
+git add . //add changes
+git commit -m "put commit message"
+git push origin master //sometimes it's main
+** Create New Repo
