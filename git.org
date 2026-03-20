@@ -7,5 +7,4 @@ git push origin master //sometimes it's main
 git init
 git add .
 git commit -m "message"
-gh create repo
 gh repo create name-of-repo --public --push --source=.
