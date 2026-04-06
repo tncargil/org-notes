@@ -8,3 +8,6 @@ git init
 git add .
 git commit -m "message"
 gh repo create name-of-repo --public --push --source=.
+** Useful commands
+git status: check current changes
+git short log {TAG/version}: shows change history of your current branch or tag
