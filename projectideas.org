@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4125c47b-94eb-43c0-ab18-76bc6ca8e13f
+:END:
+#+title: ProjectIdeas
+* Server
+* Melee Firmware
