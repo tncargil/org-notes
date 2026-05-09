@@ -1,0 +1,43 @@
+#+title: Ai
+* Notes
+** Top-k
+number of chunks retrieved from the vector store
+** Prompt Structure
+System Instruction(role/behavior) -> User Input(task/Query) -> Response
+** Tokens
+words broken into pieces
+token can be a word part of a word punctuation or special characters
+typically about 4 characters on average or 0.75 word
+so 100 tokens is around 75 words
+** Context(Short-term memory)
+Everything you give in a prompt  = context
+Context size is the max tokens an LLM can read
+output length max tokens available for output
+contains system prompt, user prompt, retrieved documents(RAG), conversation history, generated response
+** Inference
+refers to how the model generates answers
+model predicts the next token repeatedly to generate responses
+each token depends on previous tokens
+*** Flow
+input prompt
+tokenization
+neural network processing
+probability distribution for next token
+token sampling
+append token
+repeat
+** Sampling
+model may choose most probable token or random token from top probabilities
+controlled used temperature and top-p(nucleus sampling)
+0.0 - 1.0 temperature value that controls randomness
+reason why responses can change
+** Top-p
+controls output diversity by limiting token selection to those covering specific cumulative probability mass
+when set to 0.9 it means the model picks the next token only from the smallest possible set of candidates whose combined probabilities add up to at least 90% of the total probability distribution
+** RAG(Retrival-Augmented Generation)
+basically open book notebook llm is given external info to pull from
+no need to retrain model
+typically used when data changes frequently, large document repositories, and or need traceability(citations)
+** Fine Tuning
+structured output
+used when a specific tone/behavior is desired
