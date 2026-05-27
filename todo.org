@@ -27,3 +27,4 @@ through this in init
 
 * Make media immutable with chattr
 * setup ssh keys
+* make server notes

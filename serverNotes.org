@@ -1,0 +1,8 @@
+* Rip CD
+* Rip DVD
+* Screen
+for use when making sure tasks run in background uninterrupted
+screen -ls #list screens
+screen -S name #create screen
+screen -r name #resume screen may need to detach with -dr
+ctrl a ctrl d #leave screen
