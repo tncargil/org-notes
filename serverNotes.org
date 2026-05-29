@@ -6,3 +6,5 @@ screen -ls #list screens
 screen -S name #create screen
 screen -r name #resume screen may need to detach with -dr
 ctrl a ctrl d #leave screen
+* Rip Youtube
+sudo yt-dlp -U #update yt-dlb
