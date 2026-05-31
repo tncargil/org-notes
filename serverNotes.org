@@ -8,3 +8,6 @@ screen -r name #resume screen may need to detach with -dr
 ctrl a ctrl d #leave screen
 * Rip Youtube
 sudo yt-dlp -U #update yt-dlb
+* Lock/Unlock ripped media from modification
+sudo chattr -R +a music/album/* #lock all content 
+sudo chattr -a #remove lock
