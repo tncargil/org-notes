@@ -1,5 +1,8 @@
 * Rip CD
+sudo abcde -o flac -d /dev/sr0 -x
 * Rip DVD
+ddrescue -b 2048 -r 3 /dev/sr0 /home/nate/ISOs/trigun_disc1.iso /home/nate/ISOs/trigun_disc1.map
+HandBrakeCLI -i /dev/sr0 -t 0 #check to see what to rip
 * Screen
 for use when making sure tasks run in background uninterrupted
 screen -ls #list screens
