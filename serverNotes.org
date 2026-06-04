@@ -1,7 +1,7 @@
 * Rip CD
 sudo abcde -o flac -d /dev/sr0 -x
 * Rip DVD
-ddrescue -b 2048 -r 3 /dev/sr0 /home/nate/ISOs/trigun_disc1.iso /home/nate/ISOs/trigun_disc1.map
+ddrescue -b 2048 -r 3 /dev/sr0 /home/nate/iso/trigun_disc1.iso /home/nate/iso/trigun_disc1.map
 HandBrakeCLI -i /dev/sr0 -t 0 #check to see what to rip
 * Screen
 for use when making sure tasks run in background uninterrupted
@@ -14,3 +14,7 @@ sudo yt-dlp -U #update yt-dlb
 * Lock/Unlock ripped media from modification
 sudo chattr -R +a music/album/* #lock all content 
 sudo chattr -a #remove lock
+
+* TODO
+on restart/reboot confirm ethernet doesnt get switched back to wifi dongle 
+ens5. Can manually switch back with dhclient but consider making persistent
