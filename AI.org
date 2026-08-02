@@ -1,0 +1,4 @@
+#+title: Ai
+* Run DeepSeek
+CUDA_VISIBLE_DEVICES=0 OLLAMA_HOST=0.0.0.0 ollama serve
+ollama run deepseek-r1:14b --hidethinking
