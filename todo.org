@@ -1,0 +1,30 @@
+* setup vanilla emacs + vim on server
+sudo apt update
+sudo apt install emacs-nox
+through this in init
+;; Initialize the package manager and add the Melpa repository
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
+
+;; Download package index if you don't have it yet
+(unless package-archive-contents
+  (package-refresh-contents))
+
+  ;; Ensure 'use-package' is installed for clean configuration management
+  (unless (package-installed-p 'use-package)
+    (package-install 'use-package))
+    (require 'use-package)
+
+    ;; Download, configure, and globally activate Vim motions (Evil Mode)
+    (use-package evil
+      :ensure t
+        :init
+	  (setq evil-want-integration t)
+	    (setq evil-want-keybinding nil) ;; Set to nil to avoid conflicts with other modes
+	      :config
+	        (evil-mode 1))
+
+* Make media immutable with chattr
+* setup ssh keys
+* make server notes
