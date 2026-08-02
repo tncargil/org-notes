@@ -1,0 +1,6 @@
+#+title: How To Run
+* JavaScript + Vite
+npm run dev -- --host
+
+* Java Springboot
+mvn spring-boot:run
