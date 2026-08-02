@@ -9,3 +9,6 @@ F*F: find file or ff
 F*R: find recent file
 rename file: find file -> enter -> R
 open file in buffer with vterm: emacsclient -n {FILE}
+**  Projectile
+Mx: projectile-discover-projects-in-directory //adds your projects
+space pp: open a project
