@@ -2,9 +2,12 @@
 ** Org Commands
 space nf: view org notes
 M + enter: create new heading
-M-left / M-right: promote/depromote heading stars
+M-left / M-right: promote/demote heading
 meta + shift + enter: create new TODO
 enter: toggle TODO status
+Alt up/down: move heading up or down
+Alt left/right: promote/demote headings
+Alt tab: cycle through expanding headers
 ** Common commands
 YOUT: open/close terminal or ot
 F*F: find file or ff
